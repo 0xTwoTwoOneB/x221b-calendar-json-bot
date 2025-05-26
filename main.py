@@ -25,14 +25,13 @@ def get_today_events():
     }
 
     for event in events:
-    data["events"].append({
-        "summary": event.get("summary", "(無標題)"),
-        "description": event.get("description", ""),
-        "location": event.get("location", ""),
-        "start": event.get("start", {}),
-        "end": event.get("end", {}),
-    })
-
+        data["events"].append({
+            "summary": event.get("summary", "(無標題)"),
+            "description": event.get("description", ""),
+            "location": event.get("location", ""),
+            "start": event.get("start", {}),
+            "end": event.get("end", {}),
+        })
 
     with open("output.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
