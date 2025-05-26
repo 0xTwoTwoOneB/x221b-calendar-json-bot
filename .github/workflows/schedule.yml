@@ -1,0 +1,29 @@
+name: Daily Calendar JSON
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天 UTC 00:00 -> 台灣 08:00
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: pip install google-api-python-client google-auth
+    - name: Generate daily calendar JSON
+      env:
+        CREDENTIALS_JSON: ${{ secrets.CREDENTIALS_JSON }}
+      run: python main.py
+    - name: Commit and push
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add output.json
+        git commit -m "update daily calendar JSON" || echo "No changes"
+        git push
