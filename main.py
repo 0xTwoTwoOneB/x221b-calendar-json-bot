@@ -11,30 +11,44 @@ def get_today_events():
 
     service = build('calendar', 'v3', credentials=creds)
     now = datetime.utcnow() + timedelta(hours=8)
-    start_of_day = now.replace(hour=0, minute=0, second=0).isoformat() + 'Z'
-    end_of_day = now.replace(hour=23, minute=59, second=59).isoformat() + 'Z'
+    start_of_day = now.replace(hour=0, minute=0, second=0)
+    end_of_day = now.replace(hour=23, minute=59, second=59)
+
+    time_min = start_of_day.isoformat() + 'Z'
+    time_max = end_of_day.isoformat() + 'Z'
+
+    print(f"📆 抓取區間：{time_min} ~ {time_max}")
 
     events_result = service.events().list(
-        calendarId='primary', timeMin=start_of_day, timeMax=end_of_day,
-        singleEvents=True, orderBy='startTime').execute()
+        calendarId='k4ai6134679@gmail.com',  # 使用者的 Gmail 作為 calendarId
+        timeMin=time_min,
+        timeMax=time_max,
+        singleEvents=True,
+        orderBy='startTime'
+    ).execute()
+
     events = events_result.get('items', [])
 
     data = {
-        "date": now.strftime("%Y-%m-%d"),
+        "date": start_of_day.strftime("%Y-%m-%d"),
         "events": []
     }
 
     for event in events:
+        summary = event.get("summary", "(無標題)")
+        start_time = event.get("start", {}).get("dateTime", "")
+        location = event.get("location", "")
         data["events"].append({
-            "summary": event.get("summary", "(無標題)"),
-            "description": event.get("description", ""),
-            "location": event.get("location", ""),
-            "start": event.get("start", {}),
-            "end": event.get("end", {}),
+            "summary": summary,
+            "start_time": start_time,
+            "location": location
         })
+        print(f"📝 {summary} @ {start_time} {location}")
 
     with open("output.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+
+
 
 if __name__ == "__main__":
     get_today_events()
