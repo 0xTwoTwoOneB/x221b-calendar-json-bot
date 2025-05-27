@@ -38,10 +38,12 @@ def get_today_events():
         summary = event.get("summary", "(無標題)")
         start_time = event.get("start", {}).get("dateTime", "")
         location = event.get("location", "")
+        location_url = f"https://www.google.com/maps/search/?q={location}" if location else ""
         data["events"].append({
             "summary": summary,
             "start_time": start_time,
-            "location": location
+            "location": location,
+            "location_url": location_url
         })
         print(f"📝 {summary} @ {start_time} {location}")
 
