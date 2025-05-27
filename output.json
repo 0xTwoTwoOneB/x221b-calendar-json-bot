@@ -4,7 +4,14 @@
     {
       "summary": "calendar bot test",
       "start_time": "2025-05-27T10:00:00+08:00",
-      "location": ""
+      "location": "",
+      "location_url": ""
+    },
+    {
+      "summary": "calendar bot test#2",
+      "start_time": "2025-05-27T14:00:00+08:00",
+      "location": "公信電子股份有限公司 Clientron Corp., 221台灣新北市汐止區新台五路一段75號3樓",
+      "location_url": "https://www.google.com/maps/search/?q=公信電子股份有限公司 Clientron Corp., 221台灣新北市汐止區新台五路一段75號3樓"
     }
   ]
 }
