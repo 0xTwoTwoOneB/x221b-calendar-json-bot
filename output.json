@@ -1,4 +1,10 @@
 {
   "date": "2025-05-27",
-  "events": []
+  "events": [
+    {
+      "summary": "calendar bot test",
+      "start_time": "2025-05-27T10:00:00+08:00",
+      "location": ""
+    }
+  ]
 }
