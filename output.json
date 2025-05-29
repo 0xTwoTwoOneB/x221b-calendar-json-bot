@@ -1,4 +1,17 @@
 {
-  "date": "2025-05-29",
-  "events": []
+  "date": "2025-05-30",
+  "events": [
+    {
+      "summary": "台北國際龍舟賽",
+      "start_time": "全天",
+      "location": "大佳河濱公園, 104台灣台北市中山區濱江街5號",
+      "location_url": "https://www.google.com/maps/search/?q=大佳河濱公園, 104台灣台北市中山區濱江街5號"
+    },
+    {
+      "summary": "台北慶功宴",
+      "start_time": "2025-05-30T12:00:00+08:00",
+      "location": "Kitchen CreAfe'客意直火(內科西湖店), 114台灣台北市內湖區瑞光路513巷37號1樓",
+      "location_url": "https://www.google.com/maps/search/?q=Kitchen CreAfe'客意直火(內科西湖店), 114台灣台北市內湖區瑞光路513巷37號1樓"
+    }
+  ]
 }
