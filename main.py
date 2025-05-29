@@ -20,7 +20,7 @@ def get_today_events():
     print(f"📆 抓取區間：{time_min} ~ {time_max}")
 
     events_result = service.events().list(
-        calendarId='k4ai6134679@gmail.com',  # 使用者的 Gmail 作為 calendarId
+        calendarId='k4ai6134679@gmail.com',
         timeMin=time_min,
         timeMax=time_max,
         singleEvents=True,
@@ -34,11 +34,25 @@ def get_today_events():
         "events": []
     }
 
+    today_str = start_of_day.strftime("%Y-%m-%d")
+
     for event in events:
         summary = event.get("summary", "(無標題)")
-        start_time = event.get("start", {}).get("dateTime", "")
+        start_info = event.get("start", {})
         location = event.get("location", "")
         location_url = f"https://www.google.com/maps/search/?q={location}" if location else ""
+
+        if "date" in start_info:
+            # 全天活動，過濾非當日
+            if start_info["date"] != today_str:
+                continue
+            start_time = "全天"
+        else:
+            # 一般活動
+            start_time = start_info.get("dateTime", "")
+            if not start_time.startswith(today_str):
+                continue  # 保守過濾非當日
+
         data["events"].append({
             "summary": summary,
             "start_time": start_time,
@@ -49,8 +63,6 @@ def get_today_events():
 
     with open("output.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-
-
 
 if __name__ == "__main__":
     get_today_events()
