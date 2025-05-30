@@ -1,17 +1,29 @@
 {
-  "date": "2025-05-30",
+  "date": "2025-05-31",
   "events": [
     {
-      "summary": "台北國際龍舟賽",
+      "summary": "新北龍舟賽",
       "start_time": "全天",
-      "location": "大佳河濱公園, 104台灣台北市中山區濱江街5號",
-      "location_url": "https://www.google.com/maps/search/?q=大佳河濱公園, 104台灣台北市中山區濱江街5號"
+      "location": "微風五區停車場, 248台灣新北市五股區更寮段洲子尾小段97之1之2地號",
+      "location_url": "https://www.google.com/maps/search/?q=微風五區停車場, 248台灣新北市五股區更寮段洲子尾小段97之1之2地號"
     },
     {
-      "summary": "台北慶功宴",
-      "start_time": "2025-05-30T12:00:00+08:00",
-      "location": "Kitchen CreAfe'客意直火(內科西湖店), 114台灣台北市內湖區瑞光路513巷37號1樓",
-      "location_url": "https://www.google.com/maps/search/?q=Kitchen CreAfe'客意直火(內科西湖店), 114台灣台北市內湖區瑞光路513巷37號1樓"
+      "summary": "台北龍舟開幕式",
+      "start_time": "2025-05-31T17:00:00+08:00",
+      "location": "大直橋下",
+      "location_url": "https://www.google.com/maps/search/?q=大直橋下"
+    },
+    {
+      "summary": "新北慶功宴-金色三麥",
+      "start_time": "2025-05-31T19:00:00+08:00",
+      "location": "金色三麥 臺北京站店, 103台灣台北市大同區承德路一段1號4 樓",
+      "location_url": "https://www.google.com/maps/search/?q=金色三麥 臺北京站店, 103台灣台北市大同區承德路一段1號4 樓"
+    },
+    {
+      "summary": "續攤唱歌預定",
+      "start_time": "2025-05-31T22:00:00+08:00",
+      "location": "好樂迪館前店KTV, 100台灣台北市中正區館前路34號",
+      "location_url": "https://www.google.com/maps/search/?q=好樂迪館前店KTV, 100台灣台北市中正區館前路34號"
     }
   ]
 }
