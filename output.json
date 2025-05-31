@@ -1,29 +1,4 @@
 {
-  "date": "2025-05-31",
-  "events": [
-    {
-      "summary": "新北龍舟賽",
-      "start_time": "全天",
-      "location": "微風五區停車場, 248台灣新北市五股區更寮段洲子尾小段97之1之2地號",
-      "location_url": "https://www.google.com/maps/search/?q=微風五區停車場, 248台灣新北市五股區更寮段洲子尾小段97之1之2地號"
-    },
-    {
-      "summary": "台北龍舟開幕式",
-      "start_time": "2025-05-31T17:00:00+08:00",
-      "location": "大直橋下",
-      "location_url": "https://www.google.com/maps/search/?q=大直橋下"
-    },
-    {
-      "summary": "新北慶功宴-金色三麥",
-      "start_time": "2025-05-31T19:00:00+08:00",
-      "location": "金色三麥 臺北京站店, 103台灣台北市大同區承德路一段1號4 樓",
-      "location_url": "https://www.google.com/maps/search/?q=金色三麥 臺北京站店, 103台灣台北市大同區承德路一段1號4 樓"
-    },
-    {
-      "summary": "續攤唱歌預定",
-      "start_time": "2025-05-31T22:00:00+08:00",
-      "location": "好樂迪館前店KTV, 100台灣台北市中正區館前路34號",
-      "location_url": "https://www.google.com/maps/search/?q=好樂迪館前店KTV, 100台灣台北市中正區館前路34號"
-    }
-  ]
+  "date": "2025-06-01",
+  "events": []
 }
