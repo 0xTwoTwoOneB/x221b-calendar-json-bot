@@ -1,4 +1,11 @@
 {
-  "date": "2025-06-23",
-  "events": []
+  "date": "2025-06-24",
+  "events": [
+    {
+      "summary": "FormosaEV Meeting",
+      "start_time": "2025-06-24T10:30:00+08:00",
+      "location": "",
+      "location_url": ""
+    }
+  ]
 }
