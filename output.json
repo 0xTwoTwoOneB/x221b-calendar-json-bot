@@ -1,4 +1,11 @@
 {
-  "date": "2025-07-03",
-  "events": []
+  "date": "2025-07-04",
+  "events": [
+    {
+      "summary": "板橋飯局",
+      "start_time": "2025-07-04T19:30:00+08:00",
+      "location": "",
+      "location_url": ""
+    }
+  ]
 }
