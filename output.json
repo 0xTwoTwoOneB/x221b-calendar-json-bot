@@ -1,4 +1,11 @@
 {
-  "date": "2025-07-09",
-  "events": []
+  "date": "2025-07-10",
+  "events": [
+    {
+      "summary": "電池廠商會議",
+      "start_time": "2025-07-10T16:30:00+08:00",
+      "location": "",
+      "location_url": ""
+    }
+  ]
 }
