@@ -1,17 +1,4 @@
 {
-  "date": "2025-07-13",
-  "events": [
-    {
-      "summary": "16.67拿咖啡豆",
-      "start_time": "2025-07-13T10:00:00+08:00",
-      "location": "",
-      "location_url": ""
-    },
-    {
-      "summary": "大學聚餐",
-      "start_time": "2025-07-13T12:00:00+08:00",
-      "location": "SBREAD, 10491台灣台北市中山區中山北路二段96巷7號",
-      "location_url": "https://www.google.com/maps/search/?q=SBREAD, 10491台灣台北市中山區中山北路二段96巷7號"
-    }
-  ]
+  "date": "2025-07-14",
+  "events": []
 }
