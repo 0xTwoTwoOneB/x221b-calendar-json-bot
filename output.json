@@ -1,4 +1,11 @@
 {
-  "date": "2025-07-15",
-  "events": []
+  "date": "2025-07-16",
+  "events": [
+    {
+      "summary": "廠商會議-高達",
+      "start_time": "2025-07-16T15:00:00+08:00",
+      "location": "",
+      "location_url": ""
+    }
+  ]
 }
